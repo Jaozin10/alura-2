@@ -4,6 +4,7 @@
     --botão-azul: #167BF7;
     --cor-de-fundo: #00030C;
     --fonte-principal:'inter';
+    --bota-azul-efeito: #898989;
 }
 
 body{
@@ -124,7 +125,8 @@ body{
 
 .rodape{
     text-align: center;
-    margin: 0 3em;
+    margin: 5em 3em;
+    padding: 1em;
 }
 
 .rodape__logo{
@@ -133,7 +135,13 @@ body{
 }
 
 .lista__link{
-    display: flex;
+    display: inline-block;
     justify-content: center;
-    margin:3em 0 ;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.container-botao:hover{
+    background-color: var(--bota-azul-efeito);
+    color: var(--cor-de-fundo);
 }
